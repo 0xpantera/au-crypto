@@ -1,0 +1,17 @@
+[package]
+name = "au-crypto"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+k256 = { version = "0.11.6", features = ["ecdsa", "keccak256"] }
+sha2 = "0.10.6"
+sha3 = "0.10.6"
+hex = "0.4.3"
+reqwest = { version = "0.11.13", features = ["json"] }
+serde = { version = "1.0.149", features = ["derive"] }
+ethers = "1.0.2"
+serde_json = "1.0.89"
+tokio = { version = "1.23.0", features = ["macros"] }
